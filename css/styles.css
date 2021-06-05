@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(147,147,147,1) 40%, rgba(147,147,147,1) 60%, rgba(0,0,0,1) 100%);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    background-color: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(147,147,147,1) 40%, rgba(147,147,147,1) 60%, rgba(0,0,0,1) 100%);
+    padding: 10px;
+}
+
+a {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
