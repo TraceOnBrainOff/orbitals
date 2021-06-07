@@ -1,24 +1,61 @@
 * {
     box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color:rgb(33,33,33);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content:center;
+}
+
+.footer {
+    height: 50px;
+    text-align: center;
+    color: black;
 }
 
 header {
-    background-color: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(147,147,147,1) 40%, rgba(147,147,147,1) 60%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(147,147,147,1) 40%, rgba(147,147,147,1) 60%, rgba(33,33,33,1));
+    letter-spacing: clamp(0.5rem, 1vw, 2.5rem);
     padding: 10px;
     font-size: 30px;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 footer {
-    background-color: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(147,147,147,1) 40%, rgba(147,147,147,1) 60%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(147,147,147,1) 40%, rgba(147,147,147,1) 60%, rgba(33,33,33,1));
     padding: 10px;
+    height: 50px;
+    margin-top: -50px;
+    text-align: left;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 35%;
+    background: rgba(147,147,147,1);
+    padding: 0px;
+    height: 1vw; /* only for demonstration, should be removed */
 }
 
-a {
+article {
     float: left;
-    width: 30%;
-    height: 300px; /* only for demonstration, should be removed */
-    background: #ccc;
-    padding: 20px;
+    padding: 0px;
+    width: 65%;
+    background-color: rgb(33,33,33);
+    height: 1vw; /* only for demonstration, should be removed */
 }
